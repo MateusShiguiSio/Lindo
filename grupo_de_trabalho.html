@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo para o Trabalho</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-6px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Custom scrollbar setup */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-x-hidden">
+
+    <!-- Elementos decorativos de fundo com brilho -->
+    <div class="absolute top-1/4 -left-20 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+    <div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-rose-600/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Container Principal com Efeito Glassmorphism -->
+    <main class="relative z-10 w-full max-w-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800/80 rounded-3xl p-6 sm:p-10 shadow-2xl shadow-indigo-950/50">
+        
+        <!-- Cabeçalho do Grupo -->
+        <header class="text-center mb-8 sm:mb-10">
+            <div class="inline-block mb-3 px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs sm:text-sm font-semibold tracking-wide text-indigo-300 shadow-inner">
+                ✨ Integrantes do Projeto
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-rose-400 to-purple-400 flex items-center justify-center gap-2 flex-wrap drop-shadow-sm">
+                <span>❗</span>
+                <span>Grupo para o Trabalho</span>
+                <span>❗</span>
+            </h1>
+            <p class="mt-3 text-slate-400 text-sm sm:text-base max-w-md mx-auto">
+                Equipe reunida para o desenvolvimento do trabalho acadêmico.
+            </p>
+        </header>
+
+        <!-- Grid de Integrantes -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5 sm:gap-4">
+            
+            <!-- Integrante: Jheid -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-pink-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-pink-500/10 group-hover:bg-pink-500/20 group-hover:scale-110 transition-transform duration-300">
+                    👄
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-pink-300 transition-colors">Jheid</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Emilly -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-red-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-red-500/10 group-hover:bg-red-500/20 group-hover:scale-110 transition-transform duration-300">
+                    ❤️️‍🔥
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-red-300 transition-colors">Emilly</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Kelly key -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-orange-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-orange-500/10 group-hover:bg-orange-500/20 group-hover:scale-110 transition-transform duration-300">
+                    🦊
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-orange-300 transition-colors">Kelly key</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Mateus M -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-amber-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-amber-500/10 group-hover:bg-amber-500/20 group-hover:scale-110 transition-transform duration-300">
+                    🐱
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-amber-300 transition-colors">Mateus M</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Sofia Sio -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-blue-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-blue-500/10 group-hover:bg-blue-500/20 group-hover:scale-110 transition-transform duration-300">
+                    💻
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-blue-300 transition-colors">Sofia Sio</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Samuel -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-emerald-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-emerald-500/10 group-hover:bg-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
+                    💪
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-emerald-300 transition-colors">Samuel</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Clara -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-rose-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-rose-500/10 group-hover:bg-rose-500/20 group-hover:scale-110 transition-transform duration-300">
+                    💝
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-rose-300 transition-colors">Clara</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Mairon -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-yellow-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-500/10 flex items-center space-x-3 cursor-pointer">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-yellow-500/10 group-hover:bg-yellow-500/20 group-hover:scale-110 transition-transform duration-300">
+                    🤠
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-yellow-300 transition-colors">Mairon</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+            <!-- Integrante: Rafael -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 hover:border-purple-500/50 rounded-2xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/10 flex items-center space-x-3 cursor-pointer sm:col-span-2 md:col-span-1">
+                <div class="text-2xl sm:text-3xl p-2 rounded-xl bg-purple-500/10 group-hover:bg-purple-500/20 group-hover:scale-110 transition-transform duration-300">
+                    🦇
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-100 group-hover:text-purple-300 transition-colors">Rafael</h2>
+                    <span class="text-xs text-slate-400">Integrante</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Rodapé do Card -->
+        <footer class="mt-8 pt-6 border-t border-slate-800 text-center">
+            <span class="inline-flex items-center gap-2 text-xs text-slate-500 font-medium">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Total de 9 integrantes no grupo
+            </span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
